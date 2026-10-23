@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>온화152 ONHWA 152 | 대구 동인동 한옥카페</title>
+<meta name="description" content="대구 동인동, 조용한 한옥의 분위기를 담은 카페 온화152. 아카시아 크림 밀크티 · 온화 크림라떼 · 계절 과일 롤케이크. 수~월 12:00~20:00, 화요일 휴무." />
+<link rel="canonical" href="https://onwha-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="온화152" />
+<meta property="og:title" content="온화152 · 대구 동인동 한옥카페" />
+<meta property="og:description" content="맛을 음미하고, 계절을 바라보는 곳. 온화152입니다." />
+<meta property="og:url" content="https://onwha-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://onwha-sample.lgt3232.workers.dev/og-onwha.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#F7F2EE" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = onwha-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 5곳 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "온화152 ONHWA 152",
+  "url": "https://onwha-sample.lgt3232.workers.dev/",
+  "image": "https://onwha-sample.lgt3232.workers.dev/og-onwha.jpg",
+  "telephone": "+82-507-1381-3525",
+  "address": { "@type": "PostalAddress", "streetAddress": "국채보상로 704-5 1층", "addressLocality": "중구", "addressRegion": "대구광역시", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday","Sunday","Monday"], "opens": "12:00", "closes": "20:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/onhwa152/"]
+}
+</script>
+<style>
+@font-face{ font-family:"OW Brush"; font-weight:400; font-display:swap; src:url("ow-songmyung.woff2") format("woff2"); }
+@font-face{ font-family:"OW Serif"; font-weight:300 600; font-display:swap; src:url("ow-cormorant.woff2") format("woff2"); }
+@font-face{ font-family:"OW Sans"; font-weight:400 600; font-display:swap; src:url("ow-pretendard.woff2") format("woff2"); }
+
+/* 토큰: 낮 = 로고 바탕 미색(실측) · 로고 먹갈색(실측) / 해질녘 = 짙은 갈색 */
+:root{
+  --day:#F7F2EE;          /* 로고 배경 실측 */
+  --day-2:#EFE7DF;
+  --ink:#4E3C28;          /* 로고 글자 실측 · day 대비 9.4:1 */
+  --soft:#6E5E4A;         /* 보조 글자 · day 대비 5.6:1 */
+  --line:#DDD2C6;
+  --dusk:#2B2119;         /* 해질녘 바탕 */
+  --dusk-ink:#EEE5DA;     /* dusk 대비 12.6:1 */
+  --dusk-soft:#B8A996;    /* dusk 대비 6.9:1 */
+  --dusk-line:#4A3B2E;
+  --brush:"OW Brush","OW Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --serif:"OW Serif","OW Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --sans:"OW Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1120px;
+}
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--day); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.85; word-break:keep-all; overflow-x:hidden; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3{ font-family:var(--brush); font-weight:400; margin:0; letter-spacing:0; }
+p{ margin:0; }
+.wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
+:focus-visible{ outline:2px solid currentColor; outline-offset:3px; }
+.d-br{ display:none; }
+@media (min-width:768px){ .d-br{ display:inline; } }
+
+/* 라벨: 로고 하단처럼 자간 넓은 세리프 대문자 + 한글 */
+.label{ font-family:var(--serif); font-weight:500; font-size:.82rem; letter-spacing:.32em; text-transform:uppercase; color:var(--soft); }
+.label .k{ font-family:var(--sans); letter-spacing:.02em; text-transform:none; margin-left:10px; font-size:.8rem; }
+.sec{ padding:80px 0; }
+@media (min-width:900px){ .sec{ padding:120px 0; } }
+.head h2{ font-size:clamp(1.7rem,4.6vw,2.6rem); line-height:1.45; margin-top:18px; }
+.rule{ width:56px; height:1px; background:currentColor; opacity:.5; margin:22px 0; }
+
+/* 버튼: 낮은 반경 · 테두리 */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 22px; border:1px solid currentColor; border-radius:2px; font-size:.94rem; font-weight:500; transition:background .25s ease, color .25s ease; }
+.btn.fill{ background:var(--ink); border-color:var(--ink); color:var(--day); }
+.btn small{ font-size:.78rem; opacity:.75; font-weight:400; }
+@media (hover:hover){ .btn:not(.fill):hover{ background:var(--ink); color:var(--day); border-color:var(--ink); } .btn.fill:hover{ background:transparent; color:var(--ink); } }
+
+/* 헤더: 해질녘 구간에 들어가면 색 반전 (.dark, setInterval로 판정) */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(247,242,238,.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--line); transition:background .5s ease, color .5s ease, border-color .5s ease; }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; gap:16px; }
+.brand{ font-family:var(--brush); font-size:1.3rem; letter-spacing:.06em; display:flex; align-items:baseline; gap:8px; }
+.brand span{ font-family:var(--serif); font-size:.95rem; letter-spacing:.18em; }
+.nav{ display:none; gap:30px; font-family:var(--serif); font-size:.92rem; letter-spacing:.16em; text-transform:uppercase; }
+@media (min-width:900px){ .nav{ display:flex; } }
+.site-head .btn{ min-height:38px; padding:0 14px; font-size:.84rem; }
+.site-head.dark{ background:rgba(43,33,25,.92); color:var(--dusk-ink); border-color:var(--dusk-line); }
+
+/* 히어로 (낮) */
+.hero{ padding:56px 0 80px; }
+.hero .wrap{ display:grid; gap:44px; align-items:center; }
+@media (min-width:900px){ .hero{ padding:90px 0 120px; } .hero .wrap{ grid-template-columns:1fr 1fr; gap:80px; } }
+.hero .logo{ width:min(52%,230px); }
+.hero h1{ font-size:clamp(1.5rem,3.6vw,2.15rem); line-height:1.6; margin-top:34px; }
+.hero .sub{ margin-top:18px; color:var(--soft); }
+.hero .cta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:32px; }
+.hero figure{ margin:0; }
+.hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+.hero figcaption{ margin-top:12px; font-family:var(--serif); font-size:.8rem; letter-spacing:.26em; text-transform:uppercase; color:var(--soft); text-align:right; }
+
+/* 낮 갤러리: 엇갈린 세로 사진 4장 */
+.day-g{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:48px; }
+@media (min-width:900px){ .day-g{ grid-template-columns:repeat(4,1fr); gap:20px; } .day-g figure:nth-child(even){ margin-top:64px; } }
+.day-g figure{ margin:0; }
+.day-g img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+
+/* 메뉴 */
+.menu-sec{ background:var(--day-2); }
+.menu{ display:grid; gap:40px; margin-top:44px; }
+@media (min-width:900px){ .menu{ grid-template-columns:1fr 1fr; gap:72px; align-items:center; } }
+.menu ol{ list-style:none; margin:0; padding:0; border-top:1px solid var(--ink); }
+.menu li{ display:grid; grid-template-columns:52px 1fr; gap:12px; padding:22px 0; border-bottom:1px solid var(--line); }
+.menu .no{ font-family:var(--serif); font-size:1.3rem; color:var(--soft); line-height:1.3; }
+.menu .pre{ display:block; font-size:.88rem; color:var(--soft); }
+.menu h3{ font-size:1.45rem; line-height:1.4; }
+.menu .close{ margin-top:22px; color:var(--soft); }
+.menu .pics{ display:grid; grid-template-columns:1.25fr 1fr; gap:12px; align-items:end; }
+.menu .pics img{ width:100%; object-fit:cover; }
+.menu .pics .a{ aspect-ratio:4/5; }
+.menu .pics .b{ display:grid; gap:12px; }
+.menu .pics .b img{ aspect-ratio:1/1; }
+
+/* 마당 */
+.yard{ display:grid; gap:34px; }
+@media (min-width:900px){ .yard{ grid-template-columns:1.1fr .9fr; gap:72px; align-items:center; } }
+.yard .pics{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.yard .pics img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+.yard .pics img:last-child{ margin-top:48px; }
+.yard .note{ margin-top:22px; padding-top:18px; border-top:1px solid var(--line); font-size:.92rem; color:var(--soft); }
+
+/* 낮 → 해질녘 전환 띠 */
+.dusk-band{ padding:300px 0 110px; background:linear-gradient(180deg, var(--day) 0%, #CDBBA6 24%, #6B5440 52%, var(--dusk) 82%); text-align:center; }
+.dusk-band p{ font-family:var(--brush); font-size:clamp(1.35rem,3.6vw,2rem); line-height:1.7; color:var(--dusk-ink); text-shadow:0 1px 18px rgba(43,33,25,.35); margin-top:18px; }
+.dusk-band .label{ color:var(--dusk-ink); opacity:.85; }
+
+/* 해질녘 구간 */
+.dusk{ background:var(--dusk); color:var(--dusk-ink); }
+.dusk .label{ color:var(--dusk-soft); }
+.dusk-g{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media (min-width:900px){ .dusk-g{ grid-template-columns:1.2fr 1fr 1fr; gap:20px; align-items:end; } }
+.dusk-g img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+.dusk-g .big{ grid-column:1 / -1; }
+@media (min-width:900px){ .dusk-g .big{ grid-column:auto; } }
+.closing{ text-align:center; margin-top:90px; }
+.closing p{ font-family:var(--brush); font-size:clamp(1.5rem,4.2vw,2.4rem); line-height:1.6; }
+.closing img{ width:min(40%,170px); margin:34px auto 0; }
+
+/* 오시는 길 (해질녘 바탕 이어서) */
+.visit{ display:grid; gap:40px; margin-top:44px; }
+@media (min-width:900px){ .visit{ grid-template-columns:1fr 1fr; gap:64px; } }
+.info{ margin:0; border-top:1px solid var(--dusk-ink); }
+.info > div{ display:grid; grid-template-columns:90px 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--dusk-line); }
+.info dt{ font-family:var(--brush); font-size:1.02rem; }
+.info dd{ margin:0; font-size:.94rem; }
+.info dd small{ display:block; color:var(--dusk-soft); font-size:.84rem; margin-top:3px; }
+.dusk .btn{ color:var(--dusk-ink); }
+.dusk .btn.fill{ background:var(--dusk-ink); border-color:var(--dusk-ink); color:var(--dusk); }
+@media (hover:hover){ .dusk .btn:not(.fill):hover{ background:var(--dusk-ink); color:var(--dusk); border-color:var(--dusk-ink); } .dusk .btn.fill:hover{ background:transparent; color:var(--dusk-ink); } }
+.visit .links{ display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+.brick{ width:100%; aspect-ratio:3/2; object-fit:cover; margin-bottom:16px; }
+.mapframe{ width:100%; height:320px; border:0; }
+@media (min-width:900px){ .mapframe{ height:360px; } }
+
+/* 푸터 */
+.foot{ background:var(--dusk); color:var(--dusk-soft); padding:56px 0 120px; border-top:1px solid var(--dusk-line); text-align:center; font-size:.84rem; }
+@media (min-width:900px){ .foot{ padding:64px 0; } }
+.foot img{ width:110px; margin:0 auto 18px; }
+
+/* 모바일 하단 바: 길찾기 · 전화 · 인스타 */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:rgba(247,242,238,.96); border-top:1px solid var(--line); transition:background .5s ease, border-color .5s ease; }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:46px; border:1px solid var(--ink); border-radius:2px; font-size:.86rem; font-weight:500; }
+.quick a.fill{ background:var(--ink); color:var(--day); }
+.quick.dark{ background:rgba(43,33,25,.96); border-color:var(--dusk-line); color:var(--dusk-ink); }
+.quick.dark a{ border-color:var(--dusk-ink); }
+.quick.dark a.fill{ background:var(--dusk-ink); color:var(--dusk); }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 리빌: setInterval 구동 */
+.js .reveal{ opacity:0; transform:translateY(20px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+@media print{ .js .reveal{ opacity:1; transform:none; } }
+</style>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; }</style></noscript>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+<header class="site-head" id="head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="온화152 처음으로">온화<span>152</span></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#day">Day</a><a href="#menu">Menu</a><a href="#yard">Yard</a><a href="#visit">Visit</a></nav>
+    <a class="btn" href="https://map.naver.com/p/entry/place/2000035446" target="_blank" rel="noopener">길찾기</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <img class="logo" src="ow-logo.webp" alt="온화 152 ONHWA 152 CAFE" width="560" height="560" />
+        <h1>대구 동인동,<br />조용한 한옥의 분위기를 담은<br />카페 온화152입니다.</h1>
+        <p class="sub">수~월 12:00~20:00 · 라스트오더 19:30 · 화요일 휴무</p>
+        <div class="cta">
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/2000035446" target="_blank" rel="noopener">네이버 길찾기</a>
+          <a class="btn" href="tel:050713813525">전화 <small>0507-1381-3525</small></a>
+          <a class="btn" href="https://www.instagram.com/onhwa152/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+      <figure class="reveal" style="--d:.12s">
+        <img src="ow-hall.webp" alt="서까래 아래 나무 마루가 이어지는 한옥 복도와 입구" width="1000" height="1250" />
+        <figcaption>Dongin-dong, Daegu</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="day" aria-labelledby="day-h" style="padding-top:20px">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">Daylight<span class="k">낮의 온화</span></p>
+        <h2 id="day-h">낮에는 따뜻한 햇살과<br />한옥의 여유를,</h2>
+      </div>
+      <div class="day-g">
+        <figure class="reveal"><img loading="lazy" src="ow-light.webp" alt="햇살이 드는 흙벽 앞 나무 의자 위 롤케이크" width="880" height="1100" /></figure>
+        <figure class="reveal"><img loading="lazy" src="ow-eaves.webp" alt="푸른 하늘 아래 한옥 처마와 나뭇가지" width="1000" height="1250" /></figure>
+        <figure class="reveal"><img loading="lazy" src="ow-chime.webp" alt="벽돌담 앞에 걸린 대나무 풍경" width="1000" height="1250" /></figure>
+        <figure class="reveal"><img loading="lazy" src="ow-window.webp" alt="나무 창틀 너머로 보이는 마당" width="720" height="900" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec menu-sec" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">Menu<span class="k">온화의 메뉴</span></p>
+        <h2 id="menu-h">천천히 머물다 가세요</h2>
+      </div>
+      <div class="menu">
+        <div class="reveal">
+          <ol>
+            <li><span class="no">01</span><div><span class="pre">향긋한</span><h3>아카시아 크림 밀크티</h3></div></li>
+            <li><span class="no">02</span><div><span class="pre">부드러운</span><h3>온화 크림라떼</h3></div></li>
+            <li><span class="no">03</span><div><span class="pre">매주 준비하는</span><h3>계절 과일 롤케이크</h3></div></li>
+          </ol>
+          <p class="close">메뉴와 가격은 매장에서 확인해 주세요. 포장도 가능해요.</p>
+        </div>
+        <div class="pics reveal" style="--d:.1s">
+          <img class="a" loading="lazy" src="ow-rollcake.webp" alt="창가 나무 테이블 위 무화과 롤케이크" width="1000" height="1250" />
+          <div class="b">
+            <img loading="lazy" src="ow-latte.webp" alt="크림이 올라간 라떼" width="529" height="529" />
+            <img loading="lazy" src="ow-pound.webp" alt="접시에 담긴 파운드케이크 세 조각" width="1000" height="750" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="yard" aria-labelledby="yard-h">
+    <div class="wrap yard">
+      <div class="pics reveal">
+        <img loading="lazy" src="ow-yard.webp" alt="돌길과 자갈이 깔린 한옥 마당" width="880" height="1100" />
+        <img loading="lazy" src="ow-pampas.webp" alt="마당 한쪽의 억새와 나무 벤치" width="720" height="900" />
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <p class="label">Yard<span class="k">야외 마당</span></p>
+        <h2 id="yard-h" style="font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.5;margin-top:18px">마당에서는<br />반려견과 함께해요</h2>
+        <p style="margin-top:18px;color:var(--soft)">야외 마당 애견동반 가능</p>
+        <p class="note">목줄 필수 · 이동가방 또는 유모차 이용 부탁드립니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="dusk-band" aria-hidden="false">
+    <div class="wrap">
+      <p class="label reveal">Dusk<span class="k">해질녘의 온화</span></p>
+      <p class="reveal">해질녘부터는<br />또 다른 분위기의 온화를<br />만나보실 수 있어요.</p>
+    </div>
+  </div>
+
+  <section class="sec dusk" aria-label="해질녘의 온화" style="padding-top:20px">
+    <div class="wrap">
+      <div class="dusk-g">
+        <img class="big reveal" loading="lazy" src="ow-lamp.webp" alt="둥근 등이 켜진 한옥 방과 나무 테이블" width="1000" height="1250" />
+        <img class="reveal" loading="lazy" src="ow-sunflower.webp" alt="어두운 테이블 위 화병에 꽂힌 해바라기" width="491" height="614" />
+        <img class="reveal" loading="lazy" src="ow-corridor.webp" alt="불이 켜진 한옥 복도 끝 출입문" width="482" height="603" />
+      </div>
+      <div class="closing reveal">
+        <p>맛을 음미하고,<br />계절을 바라보는 곳.</p>
+        <img loading="lazy" src="ow-logo-light.webp" alt="온화 152" width="560" height="560" />
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dusk" id="visit" aria-labelledby="visit-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">Visit<span class="k">오시는 길</span></p>
+        <h2 id="visit-h">붉은 벽돌 외관의 한옥카페</h2>
+      </div>
+      <div class="visit">
+        <div class="reveal">
+          <dl class="info">
+            <div><dt>주소</dt><dd>대구 중구 국채보상로 704-5 1층<small>동인동4가 152 · 경대병원역 4번 출구에서 약 1km</small></dd></div>
+            <div><dt>찾아오는 길</dt><dd>신천황제떡볶이 뒤편,<br />동인유료주차장 바로 맞은편에 위치해 있습니다.</dd></div>
+            <div><dt>영업시간</dt><dd>수~월 12:00~20:00<small>라스트오더 19:30 · 매주 화요일 정기휴무</small></dd></div>
+            <div><dt>주차</dt><dd>일요일 무료주차 가능</dd></div>
+            <div><dt>전화</dt><dd><a href="tel:050713813525">0507-1381-3525</a><small>포장 가능</small></dd></div>
+          </dl>
+          <div class="links">
+            <a class="btn fill" href="https://map.naver.com/p/entry/place/2000035446" target="_blank" rel="noopener">네이버 길찾기</a>
+            <a class="btn" href="tel:050713813525">전화하기</a>
+            <a class="btn" href="https://www.instagram.com/onhwa152/" target="_blank" rel="noopener">인스타그램</a>
+          </div>
+        </div>
+        <div class="reveal" style="--d:.1s">
+          <img class="brick" loading="lazy" src="ow-brick.webp" alt="온화152의 붉은 벽돌 외벽과 나무 창" width="691" height="461" />
+          <iframe class="mapframe" title="온화152 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EA%B5%AD%EC%B1%84%EB%B3%B4%EC%83%81%EB%A1%9C%20704-5&amp;z=17&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="ow-logo-light.webp" alt="온화 152" width="560" height="560" loading="lazy" />
+    <p>온화152 · 대구 중구 국채보상로 704-5 1층 · 0507-1381-3525<br />수~월 12:00~20:00 (화요일 휴무) · © ONHWA 152</p>
+  </div>
+</footer>
+
+<div class="quick" id="quick" aria-label="빠른 연결">
+  <a class="fill" href="https://map.naver.com/p/entry/place/2000035446" target="_blank" rel="noopener">길찾기</a>
+  <a href="tel:050713813525">전화</a>
+  <a href="https://www.instagram.com/onhwa152/" target="_blank" rel="noopener">인스타그램</a>
+</div>
+
+<script>
+(function(){
+  /* 리빌: setInterval */
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1 && !el.style.getPropertyValue('--d')){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),5)*0.08)+'s'); }
+  });
+  var head=document.getElementById('head'), quick=document.getElementById('quick');
+  var firstDusk=document.querySelector('.dusk');
+  setInterval(function(){
+    /* 헤더 · 하단 바: 해질녘 구간에 들어서면 어두운 색으로 */
+    if(firstDusk){
+      var dark=firstDusk.getBoundingClientRect().top < 64;
+      head.classList.toggle('dark',dark);
+      quick.classList.toggle('dark', firstDusk.getBoundingClientRect().top < window.innerHeight - 60);
+    }
+    if(!pending.length) return;
+    if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){
+      pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; return;
+    }
+    var line=window.innerHeight*0.9;
+    pending=pending.filter(function(el){
+      if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+      return true;
+    });
+  },120);
+
+  /* 앵커 스크롤: setInterval */
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href'); var el=id==='#top'?document.body:document.querySelector(id);
+      if(!el) return; e.preventDefault();
+      var start=window.pageYOffset, end=id==='#top'?0:el.getBoundingClientRect().top+start-head.offsetHeight+1;
+      var t0=Date.now(), dur=560;
+      var iv=setInterval(function(){
+        var p=Math.min((Date.now()-t0)/dur,1), e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+        window.scrollTo(0,start+(end-start)*e2);
+        if(p>=1) clearInterval(iv);
+      },16);
+    });
+  });
+})();
+</script>
+</body>
+</html>
