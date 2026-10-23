@@ -35,10 +35,11 @@
 }
 </script>
 <style>
-@font-face{ font-family:"OW Brush"; font-weight:400; font-display:swap; src:url("ow-songmyung.woff2") format("woff2"); }
+@font-face{ font-family:"OW Brush"; font-weight:300; font-display:swap; src:url("ow-notoserif.woff2") format("woff2"); }
 @font-face{ font-family:"OW Serif"; font-weight:300 600; font-display:swap; src:url("ow-cormorant.woff2") format("woff2"); }
 @font-face{ font-family:"OW Sans"; font-weight:400 600; font-display:swap; src:url("ow-pretendard.woff2") format("woff2"); }
 
+/* 한글 제목: Noto Serif KR 300(얇고 정적인 명조) */
 /* 토큰: 낮 = 로고 바탕 미색(실측) · 로고 먹갈색(실측) / 해질녘 = 짙은 갈색 */
 :root{
   --day:#F7F2EE;          /* 로고 배경 실측 */
@@ -60,7 +61,7 @@ html{ -webkit-text-size-adjust:100%; }
 body{ margin:0; background:var(--day); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.85; word-break:keep-all; overflow-x:hidden; }
 img{ max-width:100%; height:auto; display:block; }
 a{ color:inherit; text-decoration:none; }
-h1,h2,h3{ font-family:var(--brush); font-weight:400; margin:0; letter-spacing:0; }
+h1,h2,h3{ font-family:var(--brush); font-weight:300; margin:0; letter-spacing:-.01em; }
 p{ margin:0; }
 .wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
 :focus-visible{ outline:2px solid currentColor; outline-offset:3px; }
@@ -95,7 +96,9 @@ p{ margin:0; }
 .hero{ padding:56px 0 80px; }
 .hero .wrap{ display:grid; gap:44px; align-items:center; }
 @media (min-width:900px){ .hero{ padding:90px 0 120px; } .hero .wrap{ grid-template-columns:1fr 1fr; gap:80px; } }
-.hero .logo{ width:min(52%,230px); }
+.hero .copy{ text-align:center; }
+.hero .logo{ width:min(64%,280px); margin:0 auto; }
+.hero .cta{ justify-content:center; }
 .hero h1{ font-size:clamp(1.5rem,3.6vw,2.15rem); line-height:1.6; margin-top:34px; }
 .hero .sub{ margin-top:18px; color:var(--soft); }
 .hero .cta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:32px; }
@@ -135,7 +138,7 @@ p{ margin:0; }
 
 /* 낮 → 해질녘 전환 띠 */
 .dusk-band{ padding:300px 0 110px; background:linear-gradient(180deg, var(--day) 0%, #CDBBA6 24%, #6B5440 52%, var(--dusk) 82%); text-align:center; }
-.dusk-band p{ font-family:var(--brush); font-size:clamp(1.35rem,3.6vw,2rem); line-height:1.7; color:var(--dusk-ink); text-shadow:0 1px 18px rgba(43,33,25,.35); margin-top:18px; }
+.dusk-band p{ font-family:var(--brush); font-weight:300; font-size:clamp(1.35rem,3.6vw,2rem); line-height:1.7; color:var(--dusk-ink); text-shadow:0 1px 18px rgba(43,33,25,.35); margin-top:18px; }
 .dusk-band .label{ color:var(--dusk-ink); opacity:.85; }
 
 /* 해질녘 구간 */
@@ -147,7 +150,7 @@ p{ margin:0; }
 .dusk-g .big{ grid-column:1 / -1; }
 @media (min-width:900px){ .dusk-g .big{ grid-column:auto; } }
 .closing{ text-align:center; margin-top:90px; }
-.closing p{ font-family:var(--brush); font-size:clamp(1.5rem,4.2vw,2.4rem); line-height:1.6; }
+.closing p{ font-family:var(--brush); font-weight:300; font-size:clamp(1.5rem,4.2vw,2.4rem); line-height:1.6; }
 .closing img{ width:min(40%,170px); margin:34px auto 0; }
 
 /* 오시는 길 (해질녘 바탕 이어서) */
@@ -200,8 +203,8 @@ p{ margin:0; }
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <div class="reveal">
-        <img class="logo" src="ow-logo.webp" alt="온화 152 ONHWA 152 CAFE" width="560" height="560" />
+      <div class="copy reveal">
+        <img class="logo" src="ow-logo.webp" alt="온화 152 ONHWA 152 CAFE" width="600" height="724" />
         <h1>대구 동인동,<br />조용한 한옥의 분위기를 담은<br />카페 온화152입니다.</h1>
         <p class="sub">수~월 12:00~20:00 · 라스트오더 19:30 · 화요일 휴무</p>
         <div class="cta">
@@ -289,7 +292,7 @@ p{ margin:0; }
       </div>
       <div class="closing reveal">
         <p>맛을 음미하고,<br />계절을 바라보는 곳.</p>
-        <img loading="lazy" src="ow-logo-light.webp" alt="온화 152" width="560" height="560" />
+        <img loading="lazy" src="ow-logo-light.webp" alt="온화 152" width="600" height="724" />
       </div>
     </div>
   </section>
@@ -326,7 +329,7 @@ p{ margin:0; }
 
 <footer class="foot">
   <div class="wrap">
-    <img src="ow-logo-light.webp" alt="온화 152" width="560" height="560" loading="lazy" />
+    <img src="ow-logo-light.webp" alt="온화 152" width="600" height="724" loading="lazy" />
     <p>온화152 · 대구 중구 국채보상로 704-5 1층 · 0507-1381-3525<br />수~월 12:00~20:00 (화요일 휴무) · © ONHWA 152</p>
   </div>
 </footer>
