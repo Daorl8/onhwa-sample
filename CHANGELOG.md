@@ -1,5 +1,8 @@
 # CHANGELOG · 온화152 ONHWA 152 (@onhwa152 · 대구 동인동 한옥카페)
 
+## v0.2.1 · 2026-10-23 (도메인 철자)
+- 도메인 onwha → **onhwa**(브랜드 로마자 ONHWA · 인스타 onhwa152와 일치). 처음 폴더 이름(onwha-sample)을 그대로 Worker 이름으로 써서 생긴 오타. wrangler.toml name + canonical · og:url · og:image · JSON-LD url/image 5곳 치환. 폴더명 · og-onwha.jpg 파일명은 내부용이라 유지.
+
 ## v0.2 · 2026-10-23 (다올 피드백)
 - 한글 제목 폰트: 송명(붓맛이라 번잡) → **Noto Serif KR 300**(얇고 정적인 명조). 300 한 굵기만 서브셋(63KB · 누락 0 · 라이선스 필드 있음). ow-songmyung.woff2 삭제, ow-notoserif.woff2 추가. og 이미지 문구도 같은 폰트로 다시 만듦.
 - 히어로 로고 크기: 로고 투명 파일에 옅은 바탕 잡티가 남아 실제 글자보다 캔버스가 컸던 것이 "작아 보인" 원인 → 잡티 제거 후 글자 둘레만 남겨 다시 자름(600×724). 표시 폭 최대 280px(실제 글자 기준 이전 약 200px의 1.4배).

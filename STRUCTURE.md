@@ -3,9 +3,9 @@
 ```
 onwha-sample/
 ├─ index.html              단일 파일 (CSS·JS 인라인)
-├─ wrangler.toml           name = onwha-sample → onwha-sample.lgt3232.workers.dev
+├─ wrangler.toml           name = onhwa-sample → onhwa-sample.lgt3232.workers.dev
 ├─ .assetsignore           img/ · 문서 · index_*.html · _deploy 배포 제외
-├─ ow-songmyung.woff2      한글 제목 (송명, 사용 글자만 → 글자 추가 시 재생성)
+├─ ow-notoserif.woff2      한글 제목 (Noto Serif KR 300, 사용 글자만 → 글자 추가 시 재생성)
 ├─ ow-cormorant.woff2      영문 라벨 (Cormorant Garamond 300–600, 라틴만)
 ├─ ow-pretendard.woff2     본문 (Pretendard 400–600, 사용 글자만)
 ├─ ow-logo.webp            로고 먹색 투명 (히어로)
